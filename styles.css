@@ -31,6 +31,7 @@ button {
 #landing-page {
     min-height: 100vh;
     /* transition: all ease; */
+    transition: all 300ms ease;
 }
 nav {
     display: flex;
@@ -595,22 +596,44 @@ footer {
 .shape {
     position: fixed;
     width: 200px;
+    transition: all 300ms ease;
+    z-index: -50;
 }
 .shape--0 {
     top: 15vh;
     left: 10vw;
 }
 .shape--1 {
-    top: 60vh;
-    left: 55vw;
+    top: 15vh;
+    left: 50vw;
 }
 .shape--2 {
-    top: 15vh;
-    left: 65vw;
+    top: 20vh;
+    left: 70vw;
 }
 .shape--3 {
     top: 50vh;
+    left: 10vw;
+}
+.shape--4 {
+    top: 50vh;
+    left: 50vw;
+}
+.shape--5 {
+    top: 50vh;
+    left: 80vw;
+}
+.shape--6 {
+    top: 80vh;
     left: 5vw;
+}
+.shape--7 {
+    top: 80vh;
+    left: 50vw;
+}
+.shape--8 {
+    top: 80vh;
+    left: 80vw;
 }
 
 @media (max-width: 768px) {
