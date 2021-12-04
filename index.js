@@ -18,10 +18,22 @@ function moveBackground(event) {
 
 function toggleContrast() {
     contrastToggle = !contrastToggle;
+    const icon = document.querySelector('.contrastIcon');
+    const shapes = document.querySelectorAll('.shape');
     if (contrastToggle) {
         document.body.classList += ' dark-theme';
+        icon.classList.replace('fa-sun', 'fa-moon');
+        for (let i = 0; i < shapes.length; ++i) {
+            shapes[i].src = './assets/star.svg';
+            shapes[i].style.width = '100px';
+        }
     } else {
         document.body.classList.remove('dark-theme');
+        icon.classList.replace('fa-moon', 'fa-sun');
+        for (let i = 0; i < shapes.length; ++i) {
+            shapes[i].src = './assets/cloud.svg';
+            shapes[i].style.width = '200px';
+        }
     }
 }
 

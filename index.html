@@ -22,13 +22,14 @@
         </script>
     </head>
     <body>
+        <div class="background">
         <section id="landing-page" onmouseover="moveBackground(event)">
             <nav>
                 <figure>
                     <img src="" alt="personal logo" id="personal-logo" />
                 </figure>
                 <ul class="nav__link--list">
-                    <li class="nav__link">
+                    <li class="nav__link" onclick="toggleModal()">
                         <button class="btn-effect nav__link--btn">About</button>
                     </li>
                     <li class="nav__link">
@@ -36,14 +37,14 @@
                             Projects
                         </button>
                     </li>
-                    <li class="nav__link">
+                    <li class="nav__link" onclick="toggleModal()">
                         <button class="btn-effect nav__link--btn">
                             Contact
                         </button>
                     </li>
                     <li class="nav__link" onclick="toggleContrast()">
                         <button class="btn-effect nav__link--btn">
-                            <i class="far fa-moon"></i>
+                            <i class="fas fa-sun contrastIcon"></i>
                         </button>
                     </li>
                 </ul>
@@ -152,12 +153,12 @@
                   </div>
                 </div>
               </div>
-            <img src="./assets/cloud.svg" class="shape shape--0">
-            <img src="./assets/cloud.svg" class="shape shape--1">
-            <img src="./assets/cloud.svg" class="shape shape--2">
-            <img src="./assets/cloud.svg" class="shape shape--3">
-            <img src="./assets/cloud.svg" class="shape shape--4">
-            <img src="./assets/cloud.svg" class="shape shape--5">
+            <img src="./assets/cloud.svg" name="star" class="shape shape--0">
+            <img src="./assets/cloud.svg" name="star" class="shape shape--1">
+            <img src="./assets/cloud.svg" name="star" class="shape shape--2">
+            <img src="./assets/cloud.svg" name="star" class="shape shape--3">
+            <img src="./assets/cloud.svg" name="star" class="shape shape--4">
+            <img src="./assets/cloud.svg" name="star" class="shape shape--5">
         </section>
         <section id="projects">
             <div class="container">
@@ -282,6 +283,7 @@
               </div>
             </div>
           </footer>
+        </div>
           <script src="index.js"></script>
     </body>
 </html>
