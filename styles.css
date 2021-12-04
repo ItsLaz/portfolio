@@ -674,14 +674,28 @@ footer {
     .modal__half {
         width: 100%;
     }
+    .shape--1 {
+        top: 25vh;
+        left: 50vw;
+    }
+    .shape--2 {
+        display: none;
+    }
+    .shape--5 {
+        left: 10vw;
+        top: 70vh;
+    }
+    .shape--4 {
+        top: 75vh;
+    }
 }
 
 @media (max-width: 480px) {
     .title {
-        font-size: 52px;
+        font-size: 44px;
     }
     .header__para {
-        font-size: 18px;
+        font-size: 16px;
     }
     .nav__link {
         display: none;
@@ -698,10 +712,24 @@ footer {
         width: 100%;
         text-align: center;
     }
+    .social__link {
+        margin-left: unset;
+    }
     .project__description--sub-title {
         margin-bottom: 8px;
     }
     .modal__half {
         padding: 40px;
+    }
+    .shape--1 {
+        display: none;
+    }
+    .shape--3 {
+        top: 30vh;
+        left: 60vw;
+    }
+    .dark-theme .shape--4 {
+        display: unset;
+        top: 75vh;
     }
 }
