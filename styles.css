@@ -682,7 +682,6 @@ footer {
     .header__links {
         display: none;
     }
-
     .header__links--mobile {
         display: flex;
         top: 330px;
