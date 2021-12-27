@@ -671,9 +671,22 @@ footer {
     left: 80vw;
 }
 
+.header__links--mobile {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .title {
-        font-size: 80px;
+        font-size: 78px;
+    }
+    .header__links {
+        display: none;
+    }
+
+    .header__links--mobile {
+        display: flex;
+        top: 330px;
+        left: 35px;
     }
     .header__para {
         font-size: 20px;
@@ -705,10 +718,14 @@ footer {
         top: 75vh;
     }
 }
-
 @media (max-width: 480px) {
     .title {
         font-size: 44px;
+    }
+    .header__links--mobile {
+        display: flex;
+        top: 220px;
+        left: 35px;
     }
     .header__para {
         font-size: 16px;
