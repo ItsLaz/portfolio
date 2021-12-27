@@ -671,7 +671,7 @@ footer {
     left: 80vw;
 }
 
-.header__links {
+.header__links--mobile {
     display: none;
 }
 
